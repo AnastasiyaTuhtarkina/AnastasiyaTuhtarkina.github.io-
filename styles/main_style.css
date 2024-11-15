@@ -1,0 +1,184 @@
+@font-face {
+    src: url('../styles/fonts/KalniaGlaze-Regular.ttf');
+    font-family: 'KalniaGlaze-Regular';
+}
+
+@media screen and (max-width: 600px) {
+    .special {
+      font-size: 12px;
+    }
+  }
+
+  body {
+    color: #666666;
+    background: #fadbfa;
+    font-family: 'KalniaGlaze-Regular', sans-serif;
+}
+
+a {
+    color: #aeabb0;
+    transition: all .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #861bbc;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+h1 {
+    font-family: 'KalniaGlaze-Regular', Arial, Helvetica, sans-serif;
+    color: blueviolet;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #e6a6c7;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #be91dd;
+}
+  
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+h2 {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(44, 22, 188);
+  
+}
+
+/**********************************/
+.education {
+    position: relative;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-bottom: 30px solid #bc89bc;
+}
+
+.education .edu-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #861bbc;
+    border-bottom: 1px solid #861bbc;
+}
+
+.education .col-md-6:first-child .edu-col {
+    padding-top: 0;
+}
+
+.education .col-md-6:last-child .edu-col {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+.education .edu-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.education .edu-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #861bbc;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.education .edu-col span i {
+    color: #861bbc;
+}
+
+.education .edu-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.education .edu-col p {
+    margin: 0;
+}
+
+
+* {box-sizing: border-box}
+
+  .container {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .html {width: 70%; background-color: #04AA6D;}
+  .css {width: 60%; background-color: #2196F3;}
+  .js {width: 50%; background-color: #f44336;}
+  .python {width: 80%; background-color: #dfe61c;}  
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    grid-gap: 2vw;
+    padding: 10px;
+    text-decoration: #861bbc;
+}

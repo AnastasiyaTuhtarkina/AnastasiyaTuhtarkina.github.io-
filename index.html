@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html>
-<heard>
-	<title>AnastasiyaTuhtarkina.github.io</title>
-</heard>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="styles/main_style.css">
+<title>Главная</title>
+</head>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!-- About Start -->
+<div class="about" id="about">
+    <div class="content-inner">
+        <div class="content-header">
+            <h2>Резюме</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-5">
+                <img src="img/about.jpg" alt="Image">
+            </div>
+            <div class="col-md-6 col-lg-7">
+                <p>
+                    Приветствую, Вас, на своей странице с резюме!
+                    На данный момент прохожу обучение. Решила координально сменить свой род деятельности
+                </p>
+            </div>
+        </div>
+<button class="collapsible">Образование</button>
+<div class="content">
+<div class="education" id="education">
+        <div class="content-header">
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="edu-col">
+                    <span>1992 <i>-</i> 1999</span>
+                    <h3>Средняя общеобразовательная школа №41</h3>
+                    <p>с 1 по 8 классы</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="edu-col">
+                    <span>1999 <i>-</i> 2003</span>
+                    <h3>Физико-математический лицей №131</h3>
+                    <p>с 9 по 11 класс</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="edu-col">
+                    <span>2004 <i>-</i> 2010</span>
+                    <h3>ГОУВПО"КГФЭИ"</h3>
+                    <p>Бух.учет, анализ и аудит</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="edu-col">
+                    <span>2024 <i>-</i>настоящее время</span>
+                    <h3>SkillFactory</h3>
+                    <p>Fullstuck разработчик на Python</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<button class="collapsible">My Skills</button>
+    <div class="content">
+        <h1>My Skills</h1>
+
+            <p>Python</p>
+            <div class="container">
+            <div class="skills python">80%</div>
+            </div>
+
+            <p>HTML</p>
+            <div class="container">
+            <div class="skills html">70%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+            <div class="skills css">60%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+            <div class="skills js">50%</div>
+            </div>
+
+    </div>
+
+<button class="collapsible">Контакты</button>
+    <div class="content">
+        <div class="grid-wrapper">
+                <div class='grid-item'>Анастасия Тухтаркина</div>
+                <div class='grid-item'>Эл.почта <a href="mailto:nastya1909@mail.ru">Nastya1909@mail.ru</a></div>
+                <div class='grid-item'>GitHub <a href="https://github.com/AnastasiyaTuhtarkina">Github: https://github.com/AnastasiyaTuhtarkina</a></div>
+                <div class='grid-item'>Тел. <a href="tel:+790000000">+790-000-000</a></div>
+                <div class='grid-item'>Адрес: 420077, РТ, г.Казань, ул.Туристическая, д.69</div>
+                <div class='grid-item'>  
+            <div class="form">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" placeholder="Your Email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" />
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <div><button class="btn" type="submit">Отправить сообщение</button></div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
 </body>
 </html>
